@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let loginScreen = LoginScreen()
+    
+    override func loadView() {
+        self.view = self.loginScreen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .goDevPurple
     }
-
-
 }
 
